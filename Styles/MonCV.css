@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 oct. 2016, 15:43:25
+    Author     : delsenyb
+*/
+
+/* Principal page style */
+@import url('styles.css');
+
+
+/* Side menu for CV part */
+.sideMenu {
+    position: fixed;
+    padding: 10px;
+    margin: 0px;
+}
+
+.sideMenu h3 {
+    text-align: center;
+    color: white;
+    background-color: black;
+    width:50%;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.sideMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;   
+    width:50%;
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    background-color: #333;
+}
+
+.sideMenu a {
+    border: white;
+    border-style: Outset;
+    font-family: Tahoma, sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 4px 16px;
+    text-decoration: none;
+}
+.sideMenu a:hover {
+    background-color: #222;
+    border: white;
+    border-style: Inset;
+}
+
+
+/* Style for the CV part */
+.CV {
+    margin: auto;
+    background-color: lightcyan;
+    width: 70%;
+    margin-top: 2%;
+    padding: 2%;
+}
+
+.CV h2 {
+    background-color: #4CAF50;
+    padding: 10px;
+    font-style: italic;
+    clear: both;
+}
+
+.CV p {
+    padding-left: 12px;
+}
+
+img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd div {
+    text-align: right;
+}

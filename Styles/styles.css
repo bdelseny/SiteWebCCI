@@ -8,6 +8,7 @@ and open the template in the editor.
     Author     : delsenyb
 */
 
+
 body {
     font-family: Helvetica, sans-serif;
     /*background-image:*/
@@ -16,6 +17,24 @@ body {
     background-attachment: fixed;
 }
 
+/* Header */
+header {
+    position: relative;
+    margin: 2%;
+}
+header h1 {
+    display: block;
+    background-color: lightseagreen;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    box-shadow: 5px 5px black;
+}
+
+/* Navigation menu */
 nav ul {
     list-style-type: none;
     margin: 2px 0px;
@@ -46,76 +65,7 @@ nav a:hover {
     background-color: #4CAF50;
 }
 
-.sideMenu {
-    position: absolute;
-    right: 0px; 
-}
-
-.sideMenu h3 {
-    text-align: center;
-    color: white;
-    background-color: black;
-    width:50%;
-    padding-bottom: 8px;
-    padding-top: 8px;
-}
-
-.sideMenu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;   
-    width:50%;
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scrolling if the sidenav has too much content */
-    background-color: #333;
-}
-
-.sideMenu a {
-    border: 1px solid white;
-    font-family: Tahoma, sans-serif;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 4px 16px;
-    text-decoration: none;
-}
-.sideMenu a:hover {
-    background-color: #111;
-}
-
-header {
-    position: relative;
-    margin: 2%;
-}
-header h1 {
-    display: block;
-    background-color: lightseagreen;
-    margin: auto;
-    width: 50%;
-    height: 50%;
-    padding: 10px;
-    font-family: Verdana, sans-serif;
-    text-align: center;
-    box-shadow: 5px 5px black;
-}
-
-.CV {
-    background-color: lightcyan;
-    width: 70%;
-    margin-top: 2%;
-    padding: 2%;
-}
-
-.CV h2 {
-    background-color: #4CAF50;
-    padding: 10px;
-    font-style: italic;
-}
-
-.CV p {
-    padding-left: 12px;
-}
-
+/* Licence */
 #licence {
     text-align: center;
     color: white;
@@ -123,6 +73,7 @@ header h1 {
     padding-bottom: 8px;
     padding-top: 8px;
     margin-top: 5px;
+    clear: both;
 }
 
 #licence a {
