@@ -13,56 +13,116 @@ and open the template in the editor.
 
 
 /* Side menu for CV part */
-.sideMenu {
-    position: fixed;
-    padding: 10px;
-    margin: 0px;
+
+@media screen and (max-width: 800px) {
+	.sideMenu h3 {
+		background-color: #000;
+		color: white;
+		text-align: center;
+		padding-bottom: 8px;
+		padding-top: 8px;
+	}
+	
+    .sideMenu ul {
+		list-style-type: none;
+		margin: 2px 0px;
+		padding: 0px;
+		overflow: hidden;
+		background-color: #333;
+	}
+
+	/* .sideMenu li { */
+		/* display: inline; */
+		/* float: left; */
+	/* } */
+
+	.sideMenu a {
+		border: white;
+		border-width: 1px;
+		border-style: Outset;
+		font-family: Tahoma, sans-serif;
+		display: block;
+		color: white;
+		text-align: center;
+		/* padding: 3px 8px; */
+		text-decoration: none;
+	}
+
+	.sideMenu a:hover {
+		border: white;
+		border-width: 1px;
+		border-style: Inset;
+		background-color: #222;
+		border: white;
+	}
+	
+	.CV {
+    margin: auto;
+    background-color: lightcyan;
+    /* width: 70%; */
+    margin-top: 2%;
+    padding: 2%;
+	/* float: right; */
+	}
 }
 
-.sideMenu h3 {
-    text-align: center;
-    color: white;
-    background-color: black;
-    width:50%;
-    padding-bottom: 8px;
-    padding-top: 8px;
-}
-
-.sideMenu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;   
-    width:50%;
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scrolling if the sidenav has too much content */
-    background-color: #333;
-}
-
-.sideMenu a {
-    border: white;
-    border-style: Outset;
-    font-family: Tahoma, sans-serif;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 4px 16px;
-    text-decoration: none;
-}
-.sideMenu a:hover {
-    background-color: #222;
-    border: white;
-    border-style: Inset;
-}
+@media screen and (min-width: 800px) {
+	.sideMenu {
+		position: fixed;
+		padding: 10px;
+		margin: 0px;
+	}
 
 
-/* Style for the CV part */
-.CV {
+	.sideMenu h3 {
+		text-align: center;
+		color: white;
+		background-color: black;
+		width:50%;
+		padding-bottom: 8px;
+		padding-top: 8px;
+	}
+
+	.sideMenu ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;   
+		width:50%;
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scrolling if the sidenav has too much content */
+		background-color: #333;
+	}
+
+	.sideMenu a {
+		border: white;
+		border-width: 1px;
+		border-style: Outset;
+		font-family: Tahoma, sans-serif;
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 4px 16px;
+		text-decoration: none;
+	}
+	.sideMenu a:hover {
+		background-color: #222;
+		border: white;
+		border-style: Inset;
+		border-width: 1px;
+	}
+	
+	.CV {
     margin: auto;
     background-color: lightcyan;
     width: 70%;
     margin-top: 2%;
     padding: 2%;
+	float: right;
+	}
+
 }
+
+/* Style for the CV part */
 
 .CV h2 {
     background-color: #4CAF50;
