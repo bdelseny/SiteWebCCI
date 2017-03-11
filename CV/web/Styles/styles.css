@@ -10,11 +10,13 @@ and open the template in the editor.
 
 
 body {
-    font-family: Helvetica, sans-serif;
-    /*background-image:*/
-    background: lightblue;
-    background: linear-gradient(to bottom right, lightblue, blue);
-    background-attachment: fixed;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin:auto;
+    width:75%;
+    background-color: lightskyblue;
+    position:relative;
+    overflow:auto; 
+    margin-bottom:40px;
 }
 
 /* Header */
@@ -67,25 +69,44 @@ nav a:hover {
 
 /* Licence */
 #licence {
-    text-align: center;
-    color: white;
+    height:30px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-color: #333;
-    padding-bottom: 8px;
-    padding-top: 8px;
-    margin-top: 5px;
-    clear: both;
+    /*text-align: center;*/
+    font-size: xx-small;
 }
 
+
 #licence a {
-    font-family: Tahoma, sans-serif;
     display: block;
     color: white;
     text-align: center;
     text-decoration: none;
     width:50%;
+    height: 100%;
     margin: auto;
+    padding: 5px;
 }
 
 #licence a:hover {
     background-color: #111;
 }
+
+.botleft {
+    float: left;
+    margin-right: 10px;
+} 
+
+.botleft img {
+    max-width: 100%;
+    height: auto;
+}
+
+.botright {
+    margin-left: 10px;
+    clear: left;
+}
+

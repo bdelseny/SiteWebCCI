@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="Styles/MonCV.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <title>Bastien Delseny - CV </title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Bastien Delseny</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a class="active" href="monCV.html">CV</a></li>
+                <li><a href="agenda.html">Emploi du temps</a></li>
+            </ul>
+        </nav>
+
+        <div class="CV">
+            <section> <h2 id="EtatCivil">État civil</h2>
+                <div>
+                    <img class="float" src="./Images/photo.jpg" alt="SuperGeek.jpg">
+                    <p>Bastien Delseny</p>	
+                    <p>23 mai 1991</p>
+                </div>
+            </section>
+
+            <section> <h2 id="Diplomes">Diplômes</h2>
+                <div>
+                    <dl>
+                        <dt>Master Spécialité Compétences Complémentaires en Informatique</dt>
+                        <dd>Université Grenoble-Alpes <div>2016-2017</div></dd>
+                    </dl>
+                </div>
+            </section>
+
+            <section> <h2 id="CompInfo">Compétences Informatiques</h2>
+                <div>
+                    <ul>
+                        <li>Programmation C, Bash, R, Matlab, OpenBugs</li>
+                        <li>LaTeX, Markdown</li>
+                        <li> OS : Linux (Ubuntu), Windows (98 à Windows 10), MacOs</li>
+                        <li>Blog prédéfinis <a href="http://lapatateendessin.blogspot.fr/2013/10/bonjour-tous-et-toutes-sur-mon-pitit.html">La patate en dessin</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section> <h2 id="Expro">Expériences professionnelles</h2>
+                <div>
+                    <p>hdjqshdkqshkdhnqksjhdqshdsqhkjqks</p>
+                    <p>ldkmskmdkqkdskdmqskdk</p>
+                    <p>lsdlmsqlkdlskqlkdmlsqqmlsk</p>
+                </div>
+            </section>
+
+            <section> <h2 id="Loisirs">Activités et loisirs</h2>
+                <div>
+                    <p>ksddsqkdfjkksdjflksdjklf</p>
+                    <p>kdflsqkdflksmfkmlslmsk</p>
+                    <p>ldksqmlkdflsdkfdslk</p>
+                </div>
+            </section>
+
+            <section> <h2 id="Links">Liens utiles</h2>
+                <div>
+                    <p>
+                        <a href="https://fr.linkedin.com/in/bastiendelseny">Profil LinkedIn</a>
+                    </p>
+                </div>
+            </section>
+            <script>
+                $(document).ready(function () {
+                    $("div", "section").hide();
+                    $("section").click(function () {
+                        $("div", this).toggle(200);
+                    });
+                });
+            </script>
+        </div>
+
+
+
+        <div id ="licence">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+                <span class="botleft"><img width="50" alt="Licence Creative Commons"  src="https://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></span>
+                <span class="botright">Cette œuvre est mise à disposition selon les termes de la Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 non transposé.</span>
+            </a>
+        </div> 
+    </body>
+
+</html>
