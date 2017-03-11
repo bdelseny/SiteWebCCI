@@ -8,41 +8,54 @@ and open the template in the editor.
     Author     : delsenyb
 */
 
-
+html {
+    background: lightcyan;
+}
 body {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     margin:auto;
     width:75%;
-    background-color: lightskyblue;
     position:relative;
-    overflow:auto; 
-    margin-bottom:40px;
+    background-color: #B9FBBE;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
+
+.container{
+    position:static;
+    background:  #B9FBBE;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    overflow:hidden; 
+}
+html, body { height: 100%; }
 
 /* Header */
 header {
     position: relative;
-    margin: 2%;
+    background : #3D4945;
+    color: #FB973B;
 }
 header h1 {
     display: block;
-    background-color: lightseagreen;
     margin: auto;
-    width: 50%;
-    height: 50%;
-    padding: 10px;
-    font-family: Verdana, sans-serif;
+    padding: 0.5%;
     text-align: center;
-    box-shadow: 5px 5px black;
 }
 
+/* Footer */
+footer {
+    position: relative;
+    bottom: 0px;
+    background : #333;
+    color: #C8986B;
+}
 /* Navigation menu */
 nav ul {
     list-style-type: none;
     margin: 2px 0px;
     padding: 0px;
     overflow: hidden;
-    background-color: #333;
 }
 
 nav li {
@@ -53,18 +66,21 @@ nav li {
 nav a {
     font-family: Tahoma, sans-serif;
     display: block;
-    color: white;
     text-align: center;
+    color: #FB973B;
     padding: 8px 16px;
     text-decoration: none;
 }
 
 nav a:hover {
-    background-color: #111;
+    background-color: #5F9582;
+    color:#B9FBBE;
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: #B9FBBE;
+    color:#3D4945;
+    font-weight: bold ;
 }
 
 /* Licence */
@@ -99,11 +115,6 @@ nav a:hover {
     float: left;
     margin-right: 10px;
 } 
-
-.botleft img {
-    max-width: 100%;
-    height: auto;
-}
 
 .botright {
     margin-left: 10px;
