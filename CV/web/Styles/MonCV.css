@@ -59,6 +59,8 @@ and open the template in the editor.
 
 dt {
     font-weight: bold;
+    margin-top:1%;
+    margin-left: 1%;
 }
 
 dd div {
@@ -113,4 +115,8 @@ a:hover {
   vertical-align: 0.15em;
   margin-left: -0.36em;
   margin-right: -0.15em;
+}
+
+div ul {
+    margin:0%;
 }
