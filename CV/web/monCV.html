@@ -101,11 +101,11 @@
 
                             <dt>Langages Web</dt>
                             <dd>JavaScript, HTML, CSS</dd>
-                            
+
                             <dt>Outils de versionning</dt>
                             <dd>Git, <a href="https://github.com/bdelseny">GitHub</a>, 
-                                <a href="https://gitlab.com/delsenyb">Gitlab<a></dd>
-                            
+                                <a href="https://gitlab.com/delsenyb">Gitlab</a></dd>
+
                             <dt>Systèmes d’exploitations</dt> 
                             <dd>Windows, Linux (Ubuntu, Arch Linux)</dd>
 
@@ -113,7 +113,7 @@
                             <dd><span class="tex">T<sub>e</sub>X</span>,
                                 <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span>,
                                 Markdown, reStructuredText</dd>
-                            
+
                             <dt>Système d'Information Géographique, <i>SIG</i></dt>
                             <dd>MapInfo, ArcGIS</dd>
 
@@ -143,8 +143,8 @@
                         </dl>
                     </div>
                 </section>
-                
-                <section><h2>Certificats<button title="Voir le contenu">PlusMoins</button></h2>
+
+                <section><h2 id="certificats">Certificats<button title="Voir le contenu">PlusMoins</button></h2>
                     <div class="diplomesStages">
                         <dl>
                             <dt>Reprenez le contrôle à l’aide de Linux!</dt>
@@ -154,8 +154,8 @@
                         </dl>
                     </div>
                 </section>
-                
-                <section><h2>Compétences en modélisation<button title="Voir le contenu">PlusMoins</button></h2>
+
+                <section><h2 id="modelisation">Compétences en modélisation<button title="Voir le contenu">PlusMoins</button></h2>
                     <div class="diplomesStages">
                         <dl>
                             <dt>Dynamique des populations</dt>
@@ -171,7 +171,7 @@
                                 </ul>
                             </dd>
                             <dd>TODO</dd>
-                            
+
                             <dt>Modélisation décisionnelle</dt>
                             <dd></dd>
                             <dd>
@@ -183,10 +183,10 @@
                         </dl>
                     </div>
                 </section>
-                
+
                 <section> <h2 id="Loisirs">Activités et loisirs <button title="Voir le contenu">PlusMoins</button></h2>
                     <div>
-<!--                    <div class="loisirs">-->
+                        <!--                    <div class="loisirs">-->
                         TODO
                     </div>
                 </section>
@@ -198,58 +198,7 @@
                         </p>
                     </div>
                 </section>
-                <script>
-                    $(function () {
-                        /**
-                         * Cacher toutes les contenus au lancement de la page
-                         */
-                        $("div", "section").hide();
-
-                        /**
-                         * Afficher ou cacher la section
-                         */
-                        $(":button").click(function () {
-                            /**
-                             * Si le contenu n'est pas visible, afficher et changer le bouton
-                             */
-                            if (!$(this).parent("h2").siblings("div").is(":visible")) {
-                                $("div", "section").hide(200, 'linear');
-                                $(":button").button({
-                                    icon: "ui-icon-plusthick",
-                                    showLabel: false
-                                });
-                                $(this).parent("h2").siblings("div").show(200, 'linear');
-                                $(this).prop('title', "Cacher le contenu");
-                                $(this).button({
-                                    icon: "ui-icon-minusthick",
-                                    showLabel: false
-                                });
-                            } else { //sinon le contenu est visible, le cacher et changer le bouton
-                                $("div", "section").hide(200, 'linear');
-                                $(this).prop('title', "Voir le contenu");
-                                $(":button").button({
-                                    icon: "ui-icon-plusthick",
-                                    showLabel: false
-                                });
-                            }
-                        });
-
-                        /**
-                         * Icon des boutons au chargement de la page
-                         */
-                        $(":button").button({
-                            icon: "ui-icon-plusthick",
-                            showLabel: false
-                        });
-                        /**
-                         * Taille des boutons
-                         */
-                        $(":button").height('3px');
-                    });
-                </script>
             </div>
-
-
 
             <div id ="licence">
                 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
@@ -258,6 +207,59 @@
                 </a>
             </div> 
         </div>
+
+        <script>
+            $(function () {
+                /**
+                 * Cacher toutes les contenus au lancement de la page
+                 */
+                $("div", "section").hide();
+
+                /**
+                 * Afficher ou cacher la section
+                 */
+                $(":button").click(function () {
+                    /**
+                     * Si le contenu n'est pas visible, afficher et changer le bouton
+                     */
+                    if (!$(this).parent("h2").siblings("div").is(":visible")) {
+                        $("div", "section").hide(150, 'linear');
+                        $(":button").button({
+                            icon: "ui-icon-plusthick",
+                            showLabel: false
+                        });
+                        $(this).parent("h2").siblings("div").show(150, 'linear');
+                        $(this).prop('title', "Cacher le contenu");
+                        $(this).button({
+                            icon: "ui-icon-minusthick",
+                            showLabel: false
+                        });
+
+                    } else { //sinon le contenu est visible, le cacher et changer le bouton
+                        $("div", "section").hide(150, 'linear');
+                        $(this).prop('title', "Voir le contenu");
+                        $(":button").button({
+                            icon: "ui-icon-plusthick",
+                            showLabel: false
+                        });
+                    }
+                    link = $(this).parent("h2").prop('id');
+                    location.href = "#" + link;
+                });
+
+                /**
+                 * Icon des boutons au chargement de la page
+                 */
+                $(":button").button({
+                    icon: "ui-icon-plusthick",
+                    showLabel: false
+                });
+                /**
+                 * Taille des boutons
+                 */
+                $(":button").height('3px');
+            });
+        </script>
     </body>
 
 </html>
