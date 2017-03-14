@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="Styles/MonCV.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <title>Bastien Delseny - CV </title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1>Bastien Delseny</h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a class="active" href="monCV.html">CV</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="CV">
+                <section> <h2 id="EtatCivil">État civil <button title="Voir le contenu">PlusMoins</button></h2>
+                    <div>
+                        <img class="float" src="./Images/photo.jpg" alt="photoProfil.jpg">
+                        <p>Bastien Delseny</p>	
+                        <p>23 mai 1991</p>
+                    </div>
+                </section>
+
+                <section> <h2 id="Diplomes">Diplômes <button title="Voir le contenu">PlusMoins</button></h2>
+                    <div>
+                        <dl class="diplomesStages">
+                            <dt><a href="http://formations.univ-grenoble-alpes.fr/fr/catalogue/master-XB/sciences-technologies-sante-STS/master-informatique-program-master-informatique/parcours-competences-complementaires-en-informatique-cci-2e-annee-subprogram-parcours-competences-complementaires-en-informatique-cci.html">
+                                    Master spécialité : Compétences Complémentaires en Informatique
+                                </a></dt>
+                            <dd>CCI, mention Informatique</dd>
+                            <dd><a href="http://www.univ-grenoble-alpes.fr/">
+                                    Université Grenoble-Alpes
+                                </a>, <i>En cours</i></dd>
+                            <dd>TODO</dd>
+
+                            <dt><a href="http://www.univ-tlse3.fr/masters/master-modelisation-des-systemes-ecologiques-664363.kjsp?RH=1455714623187">
+                                    Master deuxième année : Modélisation des Systèmes Écologiques
+                                </a>
+                            </dt>
+                            <dd>MSE, mention Écologie</dd>
+                            <dd><a href="http://www.univ-tlse3.fr/">
+                                    Université Paul Sabatier Toulouse III
+                                </a>, <i>2016</i></dd>
+                            <dd>TODO</dd>
+
+                            <dt><a href="http://www.univ-tlse3.fr/decouvrir-nos-diplomes/master-mention-biodiversite-ecologie-et-evolution-2016-2021-619907.kjsp?RH=1454074064222">
+                                    Master première année : Écologie
+                                </a>
+                            </dt>
+                            <dd></dd>
+                            <dd><a href="http://www.univ-tlse3.fr/">
+                                    Université Paul Sabatier Toulouse III
+                                </a>, <i>2016</i></dd>
+                            <dd>TODO</dd>
+
+                            <dt><a href="http://www.univ-tlse3.fr/licences/licence-biologie-des-organismes-des-populations-et-des-ecosystemes-664314.kjsp?RH=1455714485463">
+                                    Licence Biologie des Organismes, des Populations et des Écosystèmes
+                                </a></dt>
+                            <dd>BOPE, mention Sciences Technologie et Santé</dd>
+                            <dd><a href="http://www.univ-tlse3.fr/">
+                                    Université Paul Sabatier Toulouse III
+                                </a>, <i>2014</i></dd>
+                            <dd>TODO</dd>
+
+                            <dt>Certificat Informatique et Internet niveau 1</dt>
+                            <dd>C2I niveau 1</dd>
+                            <dd><a href="http://www.univ-tlse3.fr/">
+                                    Université Paul Sabatier Toulouse III</a>
+                                , <i>2010</i></dd>
+                            <dd>TODO</dd>
+
+                            <dt>Baccalauréat série Scientifique</dt>
+                            <dd></dd>
+                            <dd>Accadémie de Toulouse, <i>2009</i></dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <section> <h2 id="CompInfo">Compétences Informatiques <button title="Voir le contenu">PlusMoins</button></h2>
+                    <div class="informatique">
+                        <dl>
+                            <dt>Languages et logiciels de modélisation et statistiques</dt>
+                            <dd>R, Matlab, OpenBugs</dd>
+
+                            <dt>Languages de programmation</dt>
+                            <dd>C, Java, shell, Bash</dd>
+
+                            <dt>Langages Web</dt>
+                            <dd>JavaScript, HTML, CSS</dd>
+
+                            <dt>Outils de versionning</dt>
+                            <dd>Git, <a href="https://github.com/bdelseny">GitHub</a>, 
+                                <a href="https://gitlab.com/delsenyb">Gitlab</a></dd>
+
+                            <dt>Systèmes d’exploitations</dt> 
+                            <dd>Windows, Linux (Ubuntu, Arch Linux)</dd>
+
+                            <dt>Langages de composition de documents</dt>
+                            <dd><span class="tex">T<sub>e</sub>X</span>,
+                                <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span>,
+                                Markdown, reStructuredText</dd>
+
+                            <dt>Système d'Information Géographique, <i>SIG</i></dt>
+                            <dd>MapInfo, ArcGIS</dd>
+
+                            <dt>Suites bureautiques</dt>
+                            <dd>Libre Office & Microsoft Office</dd>
+                        </dl>
+                        <a href="" style="text-decoration: underline;">En savoir plus sur mes compétences informatiques</a>
+                    </div>
+                </section>
+
+                <section> <h2 id="stageRecherche">Stages de recherche<button title="Voir le contenu">PlusMoins</button></h2>
+                    <div class="diplomesStages">
+                        <dl>
+                            <dt>Gestion multifonctionnelle d’une
+                                forêt en univers risqué</dt>
+                            <dd>Stéphane Couture, Chargé de Recherche Économiste</dd>
+                            <dd>Institut National de la Recherche Agronomique de Toulouse,
+                                <i>INRA</i>, <i>Janvier - Juin 2016</i></dd>
+                            <dd>TODO</dd>
+
+                            <dt>Isolement reproducteur de deux sous-espèces 
+                                d’Antirrhinum majus par les bourdons et xylocopes dans
+                                une zone hybride</dt>
+                            <dd>Christophe Andalo, Maître de conférences</dd>
+                            <dd>Laboratoire Evolution & Diversité Biologique de Toulouse,
+                                <i>EDB</i>, <i>Février - Mai 2015</i></dd>
+                            <dd>TODO</dd>
+                        </dl>
+                        <a href="#" style="text-decoration: underline;">En savoir plus sur mes stages</a>
+                    </div>
+                </section>
+
+                <section><h2 id="certificats">Certificats<button title="Voir le contenu">PlusMoins</button></h2>
+                    <div class="diplomesStages">
+                        <dl>
+                            <dt>Reprenez le contrôle à l’aide de Linux!</dt>
+                            <dd>certificat n°7536671360</dd>
+                            <dd>OpenClassrooms, <i>Avril 2016</i></dd>
+                            <dd>TODO</dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <section><h2 id="modelisation">Compétences en modélisation<button title="Voir le contenu">PlusMoins</button></h2>
+                    <div class="diplomesStages">
+                        <dl>
+                            <dt>Dynamique des populations</dt>
+                            <dd></dd>
+                            <dd>
+                                <ul>
+                                    <li>Construction et analyse des modèles classiques</li>
+                                    <li>Formalisation mathématique d'un modèle</li>
+                                    <li>Paramétrisation et validation de modèles</li>
+                                    <li>Simulation de systèmes dynamiques</li>
+                                    <li>Analyse graphique de systèmes dynamiques</li>
+                                    <li>Interprétation des analyses de systèmes dynamiques</li>
+                                </ul>
+                            </dd>
+                            <dd>TODO</dd>
+
+                            <dt>Modélisation décisionnelle</dt>
+                            <dd></dd>
+                            <dd>
+                                <ul>
+                                    <li>Processus Décisionnels de Markov, <i>MDP</i></li>
+                                </ul>
+                            </dd>
+                            <dd>TODO</dd>
+                        </dl>
+                        <a href="#" style="text-decoration: underline;">En savoir plus sur cette partie modélisation</a>
+                    </div>
+                </section>
+
+                <section><h2 id="statistiques">Compétences en statistiques<button title="Voir le contenu">PlusMoins</button></h2>
+                    <div class="diplomesStages">
+                        <dl>
+                            <dt>Statistiques comparatives</dt>
+                            <dd></dd>
+                            <dd>
+                                <ul>
+                                    <li>TODO</li>
+                                </ul>
+                            </dd>
+                            <dd>TODO</dd>
+
+                            <dt>Machine learning, <i>apprentissage automatique</i></dt>
+                            <dd></dd>
+                            <dd>
+                                <ul>
+                                    <li>Support Vector Machine, <i>SVM</i><br>
+                                        TODO
+                                    </li>
+                                    <li>Random Forest<br>
+                                        TODO
+                                    </li>
+                                    <li>Classification And Regression Tree, <i>CART</i><br>
+                                        TODO
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd>TODO</dd>
+
+                            <dt>Analyses multivariées</dt>
+                            <dd></dd>
+                            <dd>
+                                <ul>
+                                    <li><i>ACM</i><br>
+                                        TODO
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd>TODO</dd>
+
+                            <dt>Analyses temporelles</dt>
+                            <dd></dd>
+                            <dd>TODO</dd>
+                        </dl>
+                        <a href="#" style="text-decoration: underline;">En savoir plus sur cette partie statistiques</a>
+                    </div>
+                </section>
+
+                <section> <h2 id="Loisirs">Activités et loisirs <button title="Voir le contenu">PlusMoins</button></h2>
+                    <div class="diplomesStages">
+                        <dl>
+                            <dt>Activités</dt>
+                            <dd></dd>
+                            <dd>
+                                <ul>
+                                    <li>Informatique & Programmation<br>
+                                        TODO
+                                    </li>
+                                    <li>Dessin<br>
+                                        TODO
+                                    </li>
+                                    <li>Jonglerie<br>
+                                        TODO
+                                    </li>
+                                </ul>
+                            </dd>
+
+                            <dt>Centres d'ntérêts</dt>
+                            <dd></dd>
+                            <dd>
+                                <ul>
+                                    <li>Jeux vidéos<br>
+                                        Jeux de réflexion, de stratégie et de simulation
+                                    </li>
+                                    <li>Bandes dessinées<br>
+                                        Okko, Gotlib, Astérix, Lucky Luke
+                                    </li>
+                                    <li>Comics<br>
+                                        Jim Lee, Jeph Loeb, DC Comics, Marvel
+                                    </li>
+                                    <li>Mangas<br>
+                                        ONE, Full Metal Alchemist, One Punch Man, Berserk
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <section> <h2 id="Links">Liens utiles <button title="Voir le contenu">PlusMoins</button></h2>
+                    <div>
+                        <p>
+                            <a href="https://fr.linkedin.com/in/bastiendelseny">Profil LinkedIn</a>
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <div id ="licence">
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+                    <span class="botleft"><img width="50" alt="Licence Creative Commons"  src="https://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></span>
+                    <span class="botright">Cette œuvre est mise à disposition selon les termes de la Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 non transposé.</span>
+                </a>
+            </div> 
+        </div>
+
+        <script>
+            $(function () {
+                /**
+                 * Cacher toutes les contenus au lancement de la page
+                 */
+                $("div", "section").hide();
+
+                /**
+                 * Afficher ou cacher la section
+                 */
+                $(":button").click(function () {
+                    /**
+                     * Si le contenu n'est pas visible, afficher et changer le bouton
+                     */
+                    if (!$(this).parent("h2").siblings("div").is(":visible")) {
+                        $("div", "section").hide(150, 'linear');
+                        $(":button").button({
+                            icon: "ui-icon-plusthick",
+                            showLabel: false
+                        });
+                        $(this).parent("h2").siblings("div").show(150, 'linear');
+                        $(this).prop('title', "Cacher le contenu");
+                        $(this).button({
+                            icon: "ui-icon-minusthick",
+                            showLabel: false
+                        });
+
+                    } else { //sinon le contenu est visible, le cacher et changer le bouton
+                        $("div", "section").hide(150, 'linear');
+                        $(this).prop('title', "Voir le contenu");
+                        $(":button").button({
+                            icon: "ui-icon-plusthick",
+                            showLabel: false
+                        });
+                    }
+                    link = $(this).parent("h2").prop('id');
+                    location.href = "#" + link;
+                });
+
+                /**
+                 * Icon des boutons au chargement de la page
+                 */
+                $(":button").button({
+                    icon: "ui-icon-plusthick",
+                    showLabel: false
+                });
+                /**
+                 * Taille des boutons
+                 */
+                $(":button").height('3px');
+            });
+        </script>
+    </body>
+
+</html>
