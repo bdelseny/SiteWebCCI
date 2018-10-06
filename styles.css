@@ -1,123 +1,156 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 22 sept. 2016, 17:19:57
-    Author     : delsenyb
-*/
-
 html {
-    background: lightcyan;
+    height: 100%;
+    box-sizing: border-box;
 }
+
 body {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    margin:auto;
-    width:75%;
-    position:relative;
-    background-color: #B9FBBE;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    font-size: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    min-height: 100%;
 }
 
-.container{
-    position:static;
-    background:  #B9FBBE;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    overflow:hidden; 
-}
-html, body { height: 100%; }
-
-/* Header */
 header {
-    position: relative;
-    background : #3D4945;
-    color: #FB973B;
-}
-header h1 {
-    display: block;
-    margin: auto;
-    padding: 0.5%;
-    text-align: center;
+    margin: 0;
+    background-color: darkolivegreen;
+    grid-area: header;
 }
 
-/* Footer */
+header h1{
+    margin: 0;
+}
+
+ul {
+    margin:0;
+}
+
+nav {
+    margin: 0;
+    background-color: blue;
+    grid-area: navbar
+}
+
+.mainContent {
+    margin: 0;
+    grid-area: maincontent;
+}
+
+section h1 {
+    padding:0.25em;
+    color: green;
+    margin: 0;
+    grid-area: title;
+}
+section .titleBar {
+    background-color: lightcyan;
+    margin: 0;
+    grid-area: titleBar;
+}
+section .period {
+    margin-top:0.25em;
+    padding:0.25em;
+    grid-area: period;
+}
+section .description {
+    padding:0.25em;
+    margin:0;
+    grid-area: description;
+}
+section .description h2,h3,h4,p{
+    margin:0;
+    margin-top:0.25em;
+    margin-bottom:0.25em;
+    text-align: justify;
+}
+.descriptionTitleGrid .label{
+    grid-area: label;
+}
+.descriptionTitleGrid .lineTitle{
+    grid-area: lineTitle;
+}
+.sectionSeparator{
+    margin-left: 5em;
+    margin-right: 5em;
+    border-style: solid;
+    border-width: 1px;
+    color: green;
+}
 footer {
-    position: relative;
-    bottom: 0px;
-    background : #333;
-    color: #C8986B;
-}
-/* Navigation menu */
-nav ul {
-    list-style-type: none;
-    margin: 2px 0px;
-    padding: 0px;
-    overflow: hidden;
-}
-
-nav li {
-    display: inline;
-    float: left;
-}
-
-nav a {
-    font-family: Tahoma, sans-serif;
-    display: block;
-    text-align: center;
-    color: #FB973B;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: #5F9582;
-    color:#B9FBBE;
-}
-
-.active {
-    background-color: #B9FBBE;
-    color:#3D4945;
-    font-weight: bold ;
-}
-
-/* Licence */
-#licence {
-    height:30px;
-    position: fixed;
+    font-size: 0.75em;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #333;
-    /*text-align: center;*/
-    font-size: xx-small;
-}
-
-
-#licence a {
-    display: block;
-    color: white;
     text-align: center;
-    text-decoration: none;
-    width:50%;
-    height: 100%;
-    margin: auto;
-    padding: 5px;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    padding: 0.5em;
+    grid-area: footer;
 }
 
-#licence a:hover {
-    background-color: #111;
+@media screen and (max-width: 500px) {
+    section .description h2,h3{
+        margin:0;
+        margin-top:0.25em;
+        margin-bottom:0.25em;
+        text-align: initial;
+    }
+    hr {
+        display: none;
+    }
 }
-
-.botleft {
-    float: left;
-    margin-right: 10px;
-} 
-
-.botright {
-    margin-left: 10px;
-    clear: left;
+@media screen and (min-width: 500px) {
+    @supports (display: grid) {
+        body {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "navbar maincontent" 
+                "footer footer";
+            grid-template-columns: 1fr 7fr;
+            grid-template-rows: 1fr 9fr 0.5fr;
+        }
+        section{
+            display: grid;
+            grid-template-areas:
+                ". title"
+                "period description";
+            grid-template-columns: 1fr 5fr;
+        }
+    }
 }
-
+@media screen and (min-width: 720px) {
+    section {
+        margin-right: 5em;
+    }
+    @supports (display: grid) {
+        .descriptionTitleGrid{
+            display: grid;
+            grid-template-areas: 
+                "label lineTitle";
+            grid-template-columns: 1fr 5fr;
+        }
+    }
+}
+@media screen and (min-width: 1080px) {
+    section {
+        margin-right: 10em;
+        margin-left: 10em;
+    }
+    @supports (display: grid) {
+        body {
+            display: grid;
+            grid-template-areas:
+                "navbar header header"
+                "navbar maincontent maincontent"
+                "footer maincontent maincontent";
+            grid-template-columns: 1fr 11fr;
+            grid-template-rows: 2fr 9fr 1fr;
+        }
+        .descriptionTitleGrid{
+            display: grid;
+            grid-template-areas: 
+                "label lineTitle";
+            grid-template-columns: 1fr 7fr;
+        }
+    }
+}
