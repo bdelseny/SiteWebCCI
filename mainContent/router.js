@@ -6,7 +6,7 @@ const CV = { template: getCVContent() }
 
 // Define routes
 const routes = [
-  { path: '/CV', component: CV }
+  { path: '/', component: CV }
 //   { path: '/bar', component: Bar }
 ]
 
